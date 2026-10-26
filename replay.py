@@ -238,7 +238,7 @@ def render_replay(
         draw.text((6, 8), clock_text, fill=(255, 255, 255), font=font_sm)
 
         draw.rectangle([0, RENDER_SIZE - 30, 320, RENDER_SIZE], fill=CLOCK_BG)
-        label = f"  {meta['label']}  |  {player_name}"
+        label = f"  {meta['label']}  |  pubg-coach"
         draw.text((6, RENDER_SIZE - 24), label, fill=(200, 200, 200), font=font_sm)
 
         frames.append(frame.convert("RGB").quantize(colors=128, dither=0))
